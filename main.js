@@ -14,6 +14,7 @@ for(let i=0;i<25;i++){
 /************************ Map function *********************************/
 alterData = new Map(data);
 alterData.iterateAll();
+alterData.iterateWithModifiedOutput();
 /************************ Map function End *********************************/
 
 // alterData = new Filter(data);

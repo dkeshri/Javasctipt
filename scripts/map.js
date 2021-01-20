@@ -10,21 +10,14 @@ export class Map {
             return data;
         });
         console.log(alterdata);
-        console.log(this.data);
     }
 
     iterateWithModifiedOutput = () => {
-        // alterdata = data.map((data)=>{
-        //     // retrun modified data item, not want name properti of project
-        //     return {id:data.id,value:data.value}
-        // });
-        // console.log(alterdata);
+        let alterdata = this.data.map((data)=>{
+            // retrun modified data item, not want name properti of project
+            return {id:data.id,value:data.value}
+        });
+        console.log(alterdata);
     }
-
-    // alterdata = data.map((data)=>{
-    //     // retrun modified data item, not want name properti of project
-    //     return {id:data.id,value:data.value}
-    // });
-    // console.log(alterdata);
     /************************ Map function End *********************************/
 }

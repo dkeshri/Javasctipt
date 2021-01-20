@@ -12,14 +12,12 @@ export class Filter {
             return true;
         });
         console.log(alterdata);
-        console.log(this.data);
     }
     filterReturnFalse = () => {
         let alterdata = this.data.filter((data) => {
             return false;
         });
         console.log(alterdata);
-        console.log(this.data);
     }
 
     fliterWithCondition = () => {
@@ -28,7 +26,6 @@ export class Filter {
             return data.id % 2 == 0;
         });
         console.log(alterdata);
-        console.log(this.data);
     }
 
 
