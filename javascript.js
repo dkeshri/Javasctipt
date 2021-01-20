@@ -1,6 +1,8 @@
+import { Map } from "./scripts/map.js";
+import { Filter } from "./scripts/Filter.js";
 var data = [];
-let alterdata;
-for(i=0;i<25;i++){
+var alterData;
+for(let i=0;i<25;i++){
     data.push({
         id:i,
         value:'depeak'+i,
@@ -8,66 +10,32 @@ for(i=0;i<25;i++){
     });
 }
 
+
 /************************ Map function *********************************/
-
-
-// iterate all that data in the array
-
-
-// alterdata = data.map((data)=>{
-//     return data;
-// });
-// console.log(alterdata);
-
-
-// alterdata = data.map((data)=>{
-//     // retrun modified data item, not want name properti of project
-//     return {id:data.id,value:data.value}
-// });
-// console.log(alterdata);
+// alterData = new Map();
+// alterData.iterateAll(data);
 /************************ Map function End *********************************/
 
+alterData = new Filter();
+alterData.filterReturnTrue(data);
+alterData.filterReturnFalse(data);
+alterData.fliterWithCondition(data);
 /************************ filter function *********************************/
 
-// it work on boolean flag.
-// if return is true then push item in the output array.
-
-// alterdata = data.filter((data)=>{
-//     return true;   
-// });
-// console.log(alterdata);
-
-
-// alterdata = data.filter((data)=>{
-//     return false;   
-// });
-// console.log(alterdata);
-
+/************************ filter function End *********************************/
+/************************ filter and map function combinatoin *********************************/
 
 
 // alterdata = data.filter((data)=>{
 
 //     // array contain even number of id object
 //     return data.id%2==0;   
+// }).map((data)=>{
+
+//     // we can modify the return  items
+//     return {id:data.id,value:data.value};
 // });
 // console.log(alterdata);
-
-
-/************************ filter function End *********************************/
-
-/************************ filter and map function combinatoin *********************************/
-
-
-alterdata = data.filter((data)=>{
-
-    // array contain even number of id object
-    return data.id%2==0;   
-}).map((data)=>{
-
-    // we can modify the return  items
-    return {id:data.id,value:data.value};
-});
-console.log(alterdata);
 
 
 
