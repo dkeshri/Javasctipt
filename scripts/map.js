@@ -1,15 +1,25 @@
 export class Map {
     /************************ Map function *********************************/
-
-    iterateAll = (data) => {
-        // iterate all that data in the array
-        let alterdata = data.map((data) => {
-            return data;
-        });
-        console.log(data);
+    constructor(data) {
+        this.data = data
     }
 
+    iterateAll = () => {
+        // iterate all that data in the array
+        let alterdata = this.data.map((data) => {
+            return data;
+        });
+        console.log(alterdata);
+        console.log(this.data);
+    }
 
+    iterateWithModifiedOutput = () => {
+        // alterdata = data.map((data)=>{
+        //     // retrun modified data item, not want name properti of project
+        //     return {id:data.id,value:data.value}
+        // });
+        // console.log(alterdata);
+    }
 
     // alterdata = data.map((data)=>{
     //     // retrun modified data item, not want name properti of project

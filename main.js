@@ -12,14 +12,14 @@ for(let i=0;i<25;i++){
 
 
 /************************ Map function *********************************/
-// alterData = new Map();
-// alterData.iterateAll(data);
+alterData = new Map(data);
+alterData.iterateAll();
 /************************ Map function End *********************************/
 
-alterData = new Filter();
-alterData.filterReturnTrue(data);
-alterData.filterReturnFalse(data);
-alterData.fliterWithCondition(data);
+// alterData = new Filter(data);
+// alterData.filterReturnTrue();
+// alterData.filterReturnFalse();
+// alterData.fliterWithCondition();
 /************************ filter function *********************************/
 
 /************************ filter function End *********************************/

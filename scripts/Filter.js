@@ -1,28 +1,34 @@
 export class Filter {
     /************************ filter function *********************************/
 
+    constructor(data){
+        this.data = data; 
+    }
     // it work on boolean flag.
     // if return is true then push item in the output array.
 
-    filterReturnTrue = (data) => {
-        let alterdata = data.filter((data) => {
+    filterReturnTrue = () => {
+        let alterdata = this.data.filter((data) => {
             return true;
         });
         console.log(alterdata);
+        console.log(this.data);
     }
-    filterReturnFalse = (data) => {
-        let alterdata = data.filter((data) => {
+    filterReturnFalse = () => {
+        let alterdata = this.data.filter((data) => {
             return false;
         });
         console.log(alterdata);
+        console.log(this.data);
     }
 
-    fliterWithCondition = (data) => {
-        let alterdata = data.filter((data) => {
+    fliterWithCondition = () => {
+        let alterdata = this.data.filter((data) => {
             // array contain even number of id object
             return data.id % 2 == 0;
         });
         console.log(alterdata);
+        console.log(this.data);
     }
 
 
