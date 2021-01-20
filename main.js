@@ -1,5 +1,6 @@
 import { Map } from "./scripts/map.js";
 import { Filter } from "./scripts/Filter.js";
+import {Reduce} from './scripts/Reduce.js'
 var data = [];
 var alterData;
 for(let i=0;i<25;i++){
@@ -12,9 +13,9 @@ for(let i=0;i<25;i++){
 
 
 /************************ Map function *********************************/
-alterData = new Map(data);
-alterData.iterateAll();
-alterData.iterateWithModifiedOutput();
+// alterData = new Map(data);
+// alterData.iterateAll();
+// alterData.iterateWithModifiedOutput();
 /************************ Map function End *********************************/
 
 // alterData = new Filter(data);
@@ -43,4 +44,7 @@ alterData.iterateWithModifiedOutput();
 /************************ filter function End *********************************/
 
 
-
+/************************ Reduce function *********************************/
+alterData = new Reduce([1,1,1,1,1]);
+alterData.Reduce();
+/************************ Reduce function End *********************************/
