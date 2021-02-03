@@ -1,3 +1,4 @@
+import { Test } from "./scripts/Test.js";
 import { Map } from "./scripts/map.js";
 import { Filter } from "./scripts/Filter.js";
 import {Reduce} from './scripts/Reduce.js'
@@ -45,6 +46,17 @@ for(let i=0;i<25;i++){
 
 
 /************************ Reduce function *********************************/
-alterData = new Reduce([1,1,1,1,1]);
-alterData.Reduce();
+// alterData = new Reduce([1,1,1,1,1]);
+// alterData.Reduce();
 /************************ Reduce function End *********************************/
+
+
+
+
+
+/************************ short circuit *********************************/
+let test = new Test();
+test.Test()
+
+
+/************************ short circuit *********************************/
