@@ -12,7 +12,6 @@ for(let i=0;i<25;i++){
     });
 }
 
-
 /************************ Map function *********************************/
 // alterData = new Map(data);
 // alterData.iterateAll();
@@ -55,8 +54,49 @@ for(let i=0;i<25;i++){
 
 
 /************************ short circuit *********************************/
-let test = new Test();
-test.Test()
+// let test = new Test();
+// test.Test()
 
 
 /************************ short circuit *********************************/
+
+
+
+
+let promise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        //reject('fail');
+        resolve('success');
+        
+    },3000)
+});
+function successFunction(data){
+    console.log(data);
+}
+function rejectFunction(data){
+    console.log(data);
+}
+promise.then(successFunction).catch(rejectFunction)
+// promise.catch(rejectFunction).then(()=>{
+//     console.log('fail deepak')
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
